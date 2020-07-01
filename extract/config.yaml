@@ -1,0 +1,19 @@
+news_sites:
+  elcomercio:
+    url: https://elcomercio.pe
+    queries:
+      homepage_article_links: ".featured-story__title a"
+      article_title: ":is(.story-header__news-title, .sht__title)"
+      article_body: "div:is(.story-contents__content, .story-content__content)"
+  eluniversal:
+    url: http://www.eluniversal.com.mx
+    queries:
+      homepage_article_links: ".field-content a"
+      article_body: ".field-name-body"
+      article_title: ".pane-content h1"
+  elpais:
+    url: https://elpais.com/america
+    queries:
+      homepage_article_links: ".story_card .headline a"
+      article_body: ""
+      article_title: ""
